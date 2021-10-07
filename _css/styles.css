@@ -1,0 +1,341 @@
+@import url('tabelas.css');
+
+*{
+    box-sizing: border-box;
+}
+  
+html {
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    background-color: #0c0b0b;
+}
+
+h1, h2, p, li, h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: limegreen;
+}
+
+a {
+    color: #777;
+    text-decoration: none;
+}
+
+[type="text"], [type="email"], textarea {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: limegreen;
+    font-weight: bolder;
+    background: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h4 {
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p{
+    color: limegreen;
+    background: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+  
+a {
+    color: limegreen;
+    text-decoration: none;
+}
+
+header {
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color:limegreen;
+    border-bottom: 1px solid limegreen;
+}
+  
+nav {
+    float: left;
+    width: 25%;
+    background: black;
+    color: limegreen;
+    padding: 20px;
+    border: 1px solid limegreen;
+}
+  
+nav ul {
+    list-style-type: none;
+    padding: 1rem;
+}
+  
+nav li {
+    border: 1px solid limegreen;
+    padding: 1rem 1rem 1.5rem 1rem;
+    text-align: center;
+}
+
+nav li:hover {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #161414;
+}
+
+article {
+    float: left;
+    width: 75%;
+    background-color: black;
+    text-align: center;
+}
+
+.paginaprincipal {
+    float: left;
+    width: 10%;
+    text-align: left;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    color:white;
+    border-top: 1px solid limegreen;
+}
+
+@media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+
+    .botao2{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .card{
+        flex-basis: 100%;
+    }
+
+    div img {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+section::after {
+    background: #ccc;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+form div {
+    background: black;
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 1px dashed limegreen;
+}
+
+label {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+  
+input {
+    padding: 10px;
+    background-color: black;
+    border: 1px solid limegreen;
+    color: limegreen;
+}
+  
+textarea {
+    background-color: black;
+    color: limegreen;
+    border: 1px solid limegreen;
+}
+  
+.botao {
+    background-color: limegreen;
+    border-radius: 10px;
+    color: black;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+  
+.botao:hover {
+    background-color: black;
+    color: limegreen;
+    cursor: pointer;
+    border: 1px solid limegreen;
+    
+}
+  
+option {
+    background-color: black;
+    color: limegreen;
+}
+
+.selecionado {
+    background-color: limegreen;
+    color: black;
+}
+
+.selecionado:hover {
+    background-color: limegreen;
+    color: black;
+    cursor: unset;
+}
+
+.tamanho{
+    height: auto;
+}
+
+.lista {
+    list-style-type: circle;
+    list-style-position: inside;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
+
+.botao2 {
+    background-color: limegreen;
+    border-radius: 10px;
+    color: black;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+  
+.botao2:hover {
+    background-color: black;
+    color: limegreen;
+    cursor: pointer;
+    border: 1px solid limegreen;
+    
+}
+
+.card-container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 20%;
+    margin: 10px 0px;
+    border: 1px solid limegreen;
+    padding: 10px;
+    height: auto;
+    width: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.filtro1 {
+    filter: blur(25px);
+}
+
+.filtro1:hover {
+    filter: blur(0px);
+}
+
+.filtro2 {
+    filter: grayscale(100%);
+}
+
+.filtro2:hover {
+    filter: grayscale(0%);
+}
+
+.filtro3 {
+    filter: invert(75%);
+}
+
+.filtro3:hover {
+    filter: invert(0%);
+}
+
+.filtro4 {
+    filter: drop-shadow(0px 0px 20px #ff0)
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    nav, article, html, body,
+    h1, h2, p, li, h4, a, header,
+    nav ul, nav li, footer, section,
+    form div, label, input, textarea,
+    option, ul, select, .table-container,
+    .paginaprincipal, .selecionado,
+    .tamanho, .lista, .filtro1, .filtro2, 
+    .filtro3, .filtro4 {
+      width: 100%;
+      height: auto;
+    }
+
+    .botao, .botao2{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .card-container, .card{
+        flex-basis: 100%;
+    }
+
+    div img {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+/*Smartphone*/
+@media (max-width: 425px){
+    
+    nav, article, html, body,
+    h1, h2, p, li, h4, a, header,
+    nav ul, nav li, footer, section,
+    form div, label, input, textarea,
+    option, ul, select, .table-container,
+    .paginaprincipal, .selecionado,
+    .tamanho, .lista, .filtro1, .filtro2, 
+    .filtro3, .filtro4 {
+        width: 100%;
+        height: auto;
+    }
+
+    .botao, .botao2{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .card-container, .card {
+        flex-basis: 100%;
+    }
+
+    div img {
+        height: 100px;
+        width: 100px;
+    }
+}
+

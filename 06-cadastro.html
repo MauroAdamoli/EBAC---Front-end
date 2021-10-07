@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Cadastro</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="img/jpg" href="./_imagens/front-end.png">
+	<link rel="stylesheet" type="text/css" href="./_css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./_css/styles.css">
+</head>
+<style>
+body {background-image: url('./_imagens/matrix.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		width: 100%;}
+</style>
+
+<body>
+
+	<header>
+		<h1>Cadastro</h1>
+	</header>
+
+	<section>
+
+		<nav>
+			<ul>
+				<li><a href="./02-filiais.html">Nossas filiais</a></li>
+				<li><a href="./04-relatorios.html">Relatórios financeiros</a></li>
+				<li><a href="./05-produtos.html">Produtos</a></li>
+				<li class="selecionado">Cadastre-se</li>
+				<li><a href="./07-venhanosvisitar.html">Venha nos visitar</a></li>
+			</ul>
+		</nav>
+
+		<article>
+			<form method="post">
+
+				<div class="table-container">
+					<h1 style="font-size: 30px;">Contato</h1>
+					<p>Preencha os campos abaixo:</p>
+				</div>
+
+
+
+				<div>
+					<label for="nome" style="color: limegreen;">Nome</label><br>
+					<input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+				</div>
+
+				<div>
+					<label for="email" style="color: limegreen;">E-mail</label><br>
+					<input type="email" name="email" id="email" placeholder="Digite seu email">
+				</div>
+
+				<div>
+					<label for="mensagem" style="color: limegreen;">Mensagem</label><br>
+					<textarea name="mensagem" id="mensagem" rows="5"></textarea>
+				</div>
+
+				<div>
+					<p>
+						<label>Qual linguagem você prefere?</label><br>
+						<input type="radio" name="linguagens" value="html"> HTML
+						<input type="radio" name="linguagens" value="css"> CSS
+						<input type="radio" name="linguagens" value="javascript"> JavaScript
+					</p>
+				</div>
+
+				<div>
+					<p>
+						<label>Quais linguagens você sabe?</label><br>
+						<input type="checkbox" name="linguagens" value="html"> HTML
+						<input type="checkbox" name="linguagens" value="css"> CSS
+						<input type="checkbox" name="linguagens" value="javascript"> JavaScript
+					</p>
+				</div>
+
+				<div>
+					<label style="color: limegreen;">Qual a sua cor favorita?</label><br>
+					<select>
+						<option value="Azul">Azul</option>
+						<option value="Verde">Verde</option>
+						<option value="Vermelho" selected>Vermelho</option>
+					</select>
+				</div><br>
+
+				<input type="submit" class="botao"><br><br>
+			</form>
+		</article>
+
+	<article class="paginaprincipal">
+		<a href="./01-index.html"><img src="./_imagens/arrow2.png" alt="voltar"></a>
+			
+	</article>
+
+
+	</section>
+
+	<footer>
+		<p>Desenvolvido por <a href="https://www.linkedin.com/in/mauro-adamoli-2169a6169/" style="color: limegreen;">Mauro</a></p>
+	</footer>
+
+</body>
+
+</html>
