@@ -49,7 +49,7 @@ function validaEmail(elemento){
 
         event.preventDefault();
 
-        const emailValido = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?/i;
+        const emailValido = /^[a-z0-9._]+@[a-z0-9_]+\.[a-z]+(\.[a-z]+)?/i;
         if(this.value.match(emailValido)) {
             document.querySelector('.mensagem').innerHTML = "";
             this.classList.remove('erro');
