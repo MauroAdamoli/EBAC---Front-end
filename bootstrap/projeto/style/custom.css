@@ -12,3 +12,7 @@ section {
 input, textarea {
     margin-bottom: 1rem;
 }
+
+body {
+    background-color: #bbf3f9;
+}
