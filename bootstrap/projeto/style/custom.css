@@ -34,3 +34,23 @@ h2 {
 .colunacentro {
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+
+    nav, ul {
+        display: block !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .card {
+        width: 100%;
+    }
+
+    nav, ul {
+        display: block !important;
+    }
+}
