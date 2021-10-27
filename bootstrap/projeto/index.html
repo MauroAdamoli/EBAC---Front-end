@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="./imagens/Logo.png" type="image/x-icon">
     <link href="./bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/custom.css">
-    <title>Document</title>
+    <title>Nordic Travel Company</title>
 </head>
 
 <body>
@@ -20,11 +20,11 @@
                     <img src="./imagens/Logo 2.png">
                 </div>
                 <div class="col">
-                        <ul class="nav justify-content-end">
-                        <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                        <ul class="nav justify-content-end nav nav-pills">
+                        <li class="nav-item"><a class="nav-link active" style="background-color: white; color: #0d6efd; border: 1px solid #0d6efd;" href="">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" style="background-color: white; color: #0d6efd; border: 1px solid #0d6efd;" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link active" style="background-color: white; color: #0d6efd; border: 1px solid #0d6efd;" href="#pacotes">Pacotes</a></li>
+                        <li class="nav-item"><a class="nav-link active" style="background-color: white; color: #0d6efd; border: 1px solid #0d6efd;" href="#contato">Contato</a></li>
                     </ul>
                 </div>
             </div>
@@ -34,54 +34,52 @@
     <section id="sobre">
         <div class="container">
             <div class="row">
-                <div class="col-md-7 col-sm-12">
+                <div class="col-md-6 col-sm-12">
                     <h2>Sobre nós</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veniam, incidunt praesentium
-                    adipisci architecto reiciendis inventore deserunt aspernatur fugiat earum ex voluptates alias quas
-                    necessitatibus dolor rem unde provident atque.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident deleniti illo totam
-                    tempora? Dolorem, labore id. Nihil ea, a mollitia iste exercitationem rem debitis necessitatibus
-                    sint nulla, officiis accusamus.</p>
-                    <a class="btn btn-lg btn-success">Botão</a>
+                    <p>A Vikings Travel Company é uma companhia de viagens com sede em Copenhagen, na Dinamarca, com
+                    pacotes exclusivos para os países nórdicos (Dinamarca, Finlândia, Islândia, Noruega e Suécia), além
+                    de destinos próximos, como as Ilhas Faroé, arquipélago de Aland e Groelândia.</p>
+                    <p>Ttemos promoções durante todos os meses para os turistas do mundo inteiro conhecerem as principais
+                    capitais e as cidades interioranas, que possuem seu charme único. Trabalhamos com pacotes completos,
+                    com passagens áreas, hospedagem, passeios e café da manhã inclusos.</p>
+                    <center><button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal-1"
+                    style="color: white; border: 1px solid white;">Click to see this content in English</button></center>
                 </div>
-                <div class="col-md-5 col-sm-12">
-                    <img src="./imagens/pexels-josh-sorenson-1714208.jpg" alt="Imagem Exemplo" class="img-fluid">
+                <div class="col-md-6 col-sm-12">
+                    <img src="./imagens/nordic flags.jpg" alt="Países Nórdicos" class="img-fluid">
                 </div>
             </div>
         </div>
     </section>
-    <section id="produtos">
+    <section id="pacotes">
         <div class="container">
             <div class="row">
                 <div class="col">
 
-                    <h2>Produtos</h2>
+                    <h2>Principais pacotes da semana</h2>
 
                     <div class="card">
-                        <img src="./imagens/pexels-josh-sorenson-1714208.jpg" alt="Imagem Exemplo" class="img-fluid">
-                        <div class="card-body">
-                            <h5 class="card-title">Lorem ipsum dolor</h5>
-                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
-                            laudantium architecto vitae eaqueipsum.</p>
-                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">ver produto</a>
+                        <img src="./imagens/copenhagen.jpg" alt="Dinamarca" class="img-fluid">
+                        <div class="card-body" style="background-color: red; color: white;">
+                            <center><h5 class="card-title">Copenhagen</h5>
+                            <h6 class="sub-title">Dinamarca</h6>
+                            <a type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modal-2" style="border: 1px solid black; color: red;">Ver promoções</a></center>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./imagens/pexels-josh-sorenson-1714208.jpg" alt="Imagem Exemplo" class="img-fluid">
-                        <div class="card-body">
-                            <h5 class="card-title">Lorem ipsum dolor</h5>
-                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
-                            laudantium architecto vitae eaqueipsum.</p>
-                            <a class="btn btn-primary" href="#produto-2">ver produto</a>
+                        <img src="./imagens/stockholm.png" alt="Suécia" class="img-fluid">
+                        <div class="card-body" style="background-color: yellow; color: blue;">
+                            <center><h5 class="card-title">Estocolmo</h5>
+                            <h6 class="sub-title">Suécia</h6>
+                            <a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3" style="border: 1px solid black; color: yellow;">Ver promoções</a></center>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./imagens/pexels-josh-sorenson-1714208.jpg" alt="Imagem Exemplo" class="img-fluid">
-                        <div class="card-body">
-                            <h5 class="card-title">Lorem ipsum dolor</h5>
-                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
-                            laudantium architecto vitae eaqueipsum.</p>
-                            <a class="btn btn-primary" href="#produto-3">ver produto</a>
+                        <img src="./imagens/oslo.png" alt="Noruega" class="img-fluid">
+                        <div class="card-body" style="background-color: red; color: blue;">
+                            <center><h5 class="card-title">Oslo</h5>
+                            <h6 class="sub-title">Noruega</h6>
+                            <a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-4" style="border: 1px solid black; color: red;">Ver promoções</a></center>
                         </div>
                     </div>
                 </div>
@@ -89,64 +87,192 @@
         </div>
     </section>
     <section id="contato">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-12">
-                    <h2>Contato</h2>
-                    <p>Ficou interessado! Preencha os campos do formulário para receber uma cotação.</p>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <form class="form"></form>
-                    <div class="input-group">
-                        <input class="form-control" type="text" name="nome" placeholder="Digite seu nome">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <h2>Contato</h2>
+                        <center><p>Ficou interessado! Preencha os campos do formulário para receber uma cotação.</p></center>
                     </div>
-                    <div class="input-group">
-                        <input class="form-control" type="email" name="nome" placeholder="Digite seu e-mail">
-                    </div>
-                    <div class="input-group">
-                        <textarea class="form-control" name="" rows="5"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-lg btn-success">Solicitar Cotação</button>
+                    <center><div class="col-md-4 col-sm-12">
+                        <form class="form">
+                            <div class="input-group">
+                                <input class="form-control" type="text" id="name" name="nameid" placeholder="Digite seu nome">
+                            </div>
+                            <div class="input-group">
+                                <input class="form-control" type="email" id="email" name="email" placeholder="Digite seu e-mail">
+                            </div>
+                            <div class="input-group">
+                                <textarea class="form-control" name="" rows="5" placeholder="Digite qual promoção mais te chamou atenção"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-lg btn-info" style="color: white; border: 1px solid white;">Solicitar Cotação</button>
+                        </form>
+                    </div></center>
                 </div>
             </div>
-        </div>
     </section>
 
     <div class="modal fade" id="modal-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Produto 1</h5>
+                    <h5 class="modal-title">About us</h5>
                     <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h6>Confira o tamanho e os preços</h6>
+                    <p>The Vikings Travel Company is a travel company, with headquarter in Copenhagen, Denmark, and
+                    exclusives packages for Nordic Countries (Denmark, Finland, Iceland, Norway and Sweden), besides
+                    close destinies, such Faroe Islands, Aland Arquipelago and Greenland.</p>
+                    <p>Every month in the year, we have promotions for all turists around the world who want to see the
+                    principal capitals and the inland cities, that has an exclusive charm. We work with complete
+                    packages, that includes airplane tickets, accomodation, tours and breakfasts.</p>
+                    <p>Clique em "Fechar" para ver este conteúdo em português</p>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Copenhagen - Dinamarca</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira os preços e opções de hospedagem e embarque</h6>
                     <table class="table table-hover table-striped">
                         <thead>
                             <tr>
-                                <th>Tamanho</th>
-                                <th>Valor</th>
+                                <th>Noites de hospedagem</th>
+                                <th>Valor (R$)</th>
+                                <th>Saindo de:</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>P</td>
-                                <td>R$ 100</td>
+                                <td class="colunacentro">6 noites</td>
+                                <td>3000</td>
+                                <td>São Paulo-SP</td>
                             </tr>
                             <tr>
-                                <td>M</td>
-                                <td>R$ 200</td>
+                                <td class="colunacentro">6 noites</td>
+                                <td>3300</td>
+                                <td>Rio de Janeiro-RJ</td>
                             </tr>
                             <tr>
-                                <td>G</td>
-                                <td>R$ 300</td>
+                                <td class="colunacentro">5 noites</td>
+                                <td>2900</td>
+                                <td>Belo Horizonte-MG</td>
+                            </tr>
+                            <tr>
+                                <td class="colunacentro">10 noites</td>
+                                <td>5000</td>
+                                <td>São Paulo-SP</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="modal fade" id="modal-3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Estocolmo - Suécia</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira os preços e opções de hospedagem e embarque</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Noites de hospedagem</th>
+                                <th>Valor (R$)</th>
+                                <th>Saindo de:</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="colunacentro">7 noites</td>
+                                <td>3400</td>
+                                <td>São Paulo-SP</td>
+                            </tr>
+                            <tr>
+                                <td class="colunacentro">6 noites</td>
+                                <td>3200</td>
+                                <td>Rio de Janeiro-RJ</td>
+                            </tr>
+                            <tr>
+                                <td class="colunacentro">10 noites</td>
+                                <td>4100</td>
+                                <td>Rio de Janeiro-RJ</td>
+                            </tr>
+                            <tr>
+                                <td class="colunacentro">7 noites</td>
+                                <td>3700</td>
+                                <td>Belo Horizonte-MG</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-4">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Oslo - Noruega</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira os preços e opções de hospedagem e embarque</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Noites de hospedagem</th>
+                                <th>Valor (R$)</th>
+                                <th>Saindo de:</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="colunacentro">6 noites</td>
+                                <td>3500</td>
+                                <td>São Paulo-SP</td>
+                            </tr>
+                            <tr>
+                                <td class="colunacentro">6 noites</td>
+                                <td>3800</td>
+                                <td>Rio de Janeiro-RJ</td>
+                            </tr>
+                            <tr>
+                                <td class="colunacentro">7 noites</td>
+                                <td>4000</td>
+                                <td>Belo Horizonte-MG</td>
+                            </tr>
+                            <tr>
+                                <td class="colunacentro">10 noites</td>
+                                <td>4700</td>
+                                <td>Belo Horizonte-MG</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                 </div>
             </div>
         </div>

@@ -16,3 +16,21 @@ input, textarea {
 body {
     background-color: #bbf3f9;
 }
+
+.nav-item {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+button {
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.colunacentro {
+    text-align: center;
+}
