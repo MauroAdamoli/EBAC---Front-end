@@ -31,6 +31,12 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
 .colunacentro {
     text-align: center;
 }
@@ -53,4 +59,34 @@ h2 {
     nav, ul {
         display: block !important;
     }
+}
+
+.denmark {
+    background-color: rgba(255, 0, 0, 0.5);
+    margin: 0px;
+    color: white;
+}
+
+.finland {
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 0px;
+    color: blue;
+}
+
+.iceland {
+    background-color: rgba(0, 0, 255, 0.9);
+    margin: 0px;
+    color: red;
+}
+
+.norway {
+    background-color: rgba(255, 0, 0, 0.8);
+    margin: 0px;
+    color: blue;
+}
+
+.sweden {
+    background-color: rgba(255, 255, 0, 0.7);
+    margin: 0px;
+    color: blue;
 }
