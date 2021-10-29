@@ -13,20 +13,20 @@
 
         <div class="mensagem"></div>
 
-        <form id="formulario-02" method="get" action=".">
+        <form id="formulario-02">
             <h2>Faça seu cadastro</h2>
-            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" class="obrigatorio">
-            <input type="email" name="email" id="email" placeholder="Digite seu email" class="email">
-            <input type="tel" name="tel" id="telid" placeholder="Digite seu telefone" class="obrigatorio">
-            <input type="text" name="cep" id="cep" placeholder="Digite seu CEP" value="" maxlength="9" onblur="pesquisacep(this.value);">
-			<input type="text" name="rua" id="rua" placeholder="Digite a sua rua">
-			<input type="text" name="bairro" id="bairro" placeholder="Digite o seu bairro">
-            <input type="text" name="cidade" id="cidade" placeholder="Digite a sua cidade">
-            <input type="text" name="uf" id="uf" placeholder="Digite o seu UF (Estado)">
-            <input type="text" name="ibge" id="ibge" placeholder="Digite o seu IBGE">
-            <center><button type="submit" class="enviar" onclick="Enviar();" value="Enviar">Enviar</button></center>
+            <input type="text" placeholder="Digite seu nome" class="obrigatorio" name="nome" required>
+            <input type="text" placeholder="Digite seu email" class="email" name="email" required>
+            <input type="text" placeholder="Digite seu telefone" class="obrigatorio" name="telefone" required>
+            <input type="text" name="cep" id="cep" placeholder="Digite seu CEP" class="obrigatorio" value="" maxlength="9" onblur="pesquisacep(this.value);" required>
+			<input type="text" name="rua" id="rua" placeholder="Digite a sua rua" required>
+			<input type="text" name="bairro" id="bairro" placeholder="Digite o seu bairro" required>
+            <input type="text" name="cidade" id="cidade" placeholder="Digite a sua cidade" required>
+            <input type="text" name="uf" id="uf" placeholder="Digite o seu UF (Estado)" required>
+            <input type="text" name="ibge" id="ibge" placeholder="Digite o seu IBGE" required>
+            <center><button type="submit">Enviar</button></center>
         </form>
-        
+
         <div id="resultado">
             
         </div>
