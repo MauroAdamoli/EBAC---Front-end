@@ -31,14 +31,14 @@ $(document).ready(function(){
 })
 
    // Callback
-   /*$('.featured-item:nth(1)').
+   $('.featured-item:nth(1)').
       hide(2000, function(){
       // este é o callback
       alert($(this).find('h4').text() + ' esgotado')
    })
    .show(2000, function(){
       alert($(this).find('h4').text() + 'em estoque')
-   })*/
+   })
 
    // Animações
    const duracao = 1000 // equivalente a 1 segundo
@@ -47,14 +47,12 @@ $(document).ready(function(){
       .show(duracao)
       .fadeOut(duracao)
       .fadeIn(duracao)
-      .toggle(duracao)
-      .toggle(duracao)
 
    $('#form-submit').on('click', function(e){
 
       e.preventDefault()
       
-      if($('#email').val() != ''){
+      if( $('#email').val() != ''){
          
          $('#email').animate({
             opacity: "toggle",
@@ -77,10 +75,84 @@ $(document).ready(function(){
       
       $('.modal-header h5.modal-title').html($(this).text())
 
-      let myModal = new bootstrap.myModal($('#modelId'))
+      let myModal = new bootstrap.Modal($('#modelId'))
 
       myModal.show()
    })
+
+   function validate( elem ){
+      if( elem.val() == '') {
+
+         console.log('o campo de '+ elem.attr('name') + ' é obrigatório')
+
+         elem.parent().find('.text-muted').show()
+
+         elem.addClass('invalid')
+
+         return false
+      } else {
+         elem.parent().find('.text-muted').hide()
+         elem.removeClass('invalid')
+      }
+   }
+
+   $('body').on('submit', '.modal-body .form', function(e){
+
+      e.preventDefault()
+
+      const inputName = $('#nome')
+      const inputEmail = $('#email')
+
+      validate(inputName)
+      validate(inputEmail)
+
+      if(inputEmail.hasClass('invalid') || inputName.hasClass('invalid')){
+         console.log('verificar campos obrigatórios')
+         return false
+      } else {
+         $(this).submit()  
+      }
+
+   })
+
+   $('body').on('blur', '#nome', function(){
+      validate($(this))
+   })
+
+   $('body').on('blur', '#email', function(){
+      validate($(this))
+   })
+
+
+   $('body').on('focus', '#date', function(){
+      $(this).datepicker()
+   })
+
+   $('body').on('blur', '#date', function(){
+      validate($(this))
+      $(this).mask('00/00/0000');
+   }) 
+
+   $('body').on('blur', '#time', function(){
+      validate($(this))
+      $(this).mask('00:00');
+   })
+
+   $('body').on('blur', '#cep', function(){
+      validate($(this))
+      $(this).mask('00000-000');
+   })
+
+   $('body').on('blur', '#phone', function(){
+      validate($(this))
+      $(this).mask('00000-0000');
+   })
+
+   $('body').on('blur', '#cpf', function(){
+      validate($(this))
+      $(this).mask('000.000.000-00');
+   })
+
      
      
      
