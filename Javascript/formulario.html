@@ -13,18 +13,18 @@
 
         <div class="mensagem"></div>
 
-        <form id="formulario-02">
+        <form name="form" id="form" onsubmit="return validar_tudo();">
             <h2>Faça seu cadastro</h2>
-            <input type="text" placeholder="Digite seu nome" class="obrigatorio" name="nome" required>
-            <input type="text" placeholder="Digite seu email" class="email" name="email" required>
-            <input type="text" placeholder="Digite seu telefone" class="obrigatorio" name="telefone" required>
-            <input type="text" name="cep" id="cep" placeholder="Digite seu CEP" class="obrigatorio" value="" maxlength="9" onblur="pesquisacep(this.value);" required>
+            <input type="text" placeholder="Digite seu nome" name="nome" id="nome" class="obrigatorio" required>
+            <input type="text" placeholder="Digite seu email" class="email" name="email" id="email" required>
+            <input type="text" placeholder="Digite seu telefone" class="obrigatorio" name="tel" id="tel" required>
+            <input type="text" name="cep" id="cep" placeholder="Digite seu CEP" value="" maxlength="9" onblur="pesquisacep(this.value);" required>
 			<input type="text" name="rua" id="rua" placeholder="Digite a sua rua" required>
 			<input type="text" name="bairro" id="bairro" placeholder="Digite o seu bairro" required>
             <input type="text" name="cidade" id="cidade" placeholder="Digite a sua cidade" required>
             <input type="text" name="uf" id="uf" placeholder="Digite o seu UF (Estado)" required>
             <input type="text" name="ibge" id="ibge" placeholder="Digite o seu IBGE" required>
-            <center><button type="submit">Enviar</button></center>
+            <center><button type="submit" onclick="validar()">Enviar</button></center>
         </form>
 
         <div id="resultado">

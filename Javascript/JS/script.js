@@ -120,20 +120,6 @@ else {
 }
 };
 
-function Enviar() {
-
-    var nome = document.getElementById("nome");
-
-    if (nome.value != "") {
-        alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
-    }
-
-}
-
-function sucesso() {
-    window.location.href = "https://www.acejundiai.com.br/wp-content/uploads/2020/06/CADASTRO-REALIZADO-COM-SUCESSO-1.jpg"
-}
-
 let camposObrigatorios = document.querySelectorAll('input.obrigatorio');
 let camposNumericos = document.querySelectorAll('input.numero');
 let camposEmail = document.querySelectorAll('input.email');
@@ -148,4 +134,71 @@ for( let emFoco of camposNumericos) {
 
 for( let emFoco of camposEmail) {
     validaEmail(emFoco);
+}
+
+/* Função Validar */
+function validar() {
+    // pegando o valor do nome pelos names
+    var nome = document.getElementById("nome");
+    var email = document.getElementById("email");
+    var tel = document.getElementById("tel");
+    var cep = document.getElementById("cep");
+    var rua = document.getElementById("rua");
+    var bairro = document.getElementById("bairro");
+    var cidade = document.getElementById("cidade");
+    var uf = document.getElementById("uf");
+    var ibge = document.getElementById("ibge");
+  
+    // verificar se o nome está vazio
+    if (nome.value == "") {
+      alert("Nome não informado");
+  
+      // Deixa o input com o focus
+      nome.focus();
+      // retorna a função e não olha as outras linhas
+      return;
+    }
+    if (email.value == "") {
+      alert("E-mail não informado");
+      email.focus();
+      return;
+    }
+    if (tel.value == "") {
+      alert("Telefone não informado");
+      tel.focus();
+      return;
+    }
+    if (cep.value == "") {
+      alert("CEP não informado");
+      cep.focus();
+      return;
+    }
+    if (rua.value == "") {
+        alert("Rua não informada");
+        rua.focus();
+        return;
+    }
+    if (bairro.value == "") {
+        alert("Bairro não informado");
+        bairro.focus();
+        return;
+    }
+    if (cidade.value == "") {
+        alert("Cidade não informada");
+        cidade.focus();
+        return;
+    }
+    if (uf.value == "") {
+        alert("UF não informado");
+        uf.focus();
+        return;
+    }
+    if (ibge.value == "") {
+        alert("IBGE não informado");
+        ibge.focus();
+        return;
+    }
+    alert("Formulário enviado com sucesso!");
+    // envia o formulário
+    //formulario.submit();
 }
