@@ -14,6 +14,12 @@ a {
 	text-decoration: none!important;
 }
 
+div p {
+	font-size: 20px;
+	line-height: 35px;
+	color: #067106;
+}
+
 .copyright-text {
 	text-transform: uppercase;
 }
@@ -674,6 +680,11 @@ a {
 	border: none;
 }
 
+.btn-success {
+	background-color: #067106;
+	margin-top: 20px;
+}
+
 /* Responsive Style */
 @media (max-width: 991px) {
 
@@ -739,6 +750,14 @@ a {
 	.featured-page #filters {
 		margin-top: 15px;
 		text-align: left;
-	} 
+	}
 
+	.owl-carousel, .owl-stage {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		flex-basis: 100%;
+		
+	}
 }

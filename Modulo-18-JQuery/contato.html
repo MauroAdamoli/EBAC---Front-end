@@ -26,19 +26,19 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#featured">Produtos</a>
+                        <a class="nav-link" href="produtos.html">Produtos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="sobre.html">Sobre nós</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contato.html">Contato</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contato.html">Contato
+                            <span class="sr-only">(current)</span>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -58,96 +58,36 @@
             </div>
         </div>
     </div>
-    
-    <div id="featured" class="featured-items">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-heading">
-                        <div class="line-dec"></div>
-                        <h1>Camisas em destaque</h1>
-                    </div>
-                </div>
-                <div class="col-md-12 col-sm-12">
-                    <div class="owl-carousel owl-theme">
-                        <div class="featured-item">
-                            <img src="assets/images/camisa-1.png" alt="Item 1">
-                            <h4>Atlético-MG</h4>
-                            <h6>R$ 250,00</h6>
-                            <a href="camisa-1.html">
-                                Comprar
-                            </a>
-                        </div>
-                        <div class="featured-item">
-                            <img src="assets/images/camisa-2.png" alt="Item 2">
-                            <h4>Palmeiras</h4>
-                            <h6>R$ 250,00</h6>
-                            <a href="single-product.html">
-                                Comprar
-                            </a>
-                        </div>
-                        <div class="featured-item">
-                            <img src="assets/images/camisa-3.png" alt="Item 3">
-                            <h4>Flamengo</h4>
-                            <h6>R$ 250,00</h6>
-                            <a href="single-product.html">
-                                Comprar
-                            </a>
-                        </div>
-                        <div class="featured-item">
-                            <img src="assets/images/camisa-4.png" alt="Item 4">
-                            <h4>Chelsea</h4>
-                            <h6>R$ 210,00</h6>
-                            <a href="single-product.html">
-                                Comprar
-                            </a>
-                        </div>
-                        <div class="featured-item">
-                            <img src="assets/images/camisa-5.png" alt="Item 5">
-                            <h4>Bayern</h4>
-                            <h6>R$ 210,00</h6>
-                            <a href="single-product.html">
-                                Comprar
-                            </a>
-                        </div>
-                        <div class="featured-item">
-                            <img src="assets/images/camisa-6.png" alt="Item 6">
-                            <h4>PSG</h4>
-                            <h6>R$ 210,00</h6>
-                            <a href="single-product.html">
-                                Comprar
-                            </a>
-                        </div>
-                        <div class="featured-item">
-                            <img src="assets/images/camisa-7.png" alt="Item 7">
-                            <h4>Bélgica</h4>
-                            <h6>R$ 180,00</h6>
-                            <a href="single-product.html">
-                                Comprar
-                            </a>
-                        </div>
-                        <div class="featured-item">
-                            <img src="assets/images/camisa-8.png" alt="Item 8">
-                            <h4>Brasil</h4>
-                            <h6>R$ 180,00</h6>
-                            <a href="single-product.html">
-                                Comprar
-                            </a>
-                        </div>
-                        <div class="featured-item">
-                            <img src="assets/images/camisa-9.png" alt="Item 9">
-                            <h4>França</h4>
-                            <h6>R$ 180,00</h6>
-                            <a href="single-product.html">
-                                Comprar
-                            </a>
-                        </div>
-                    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="section-heading">
+                    <div class="line-dec"></div>
+                    <h1>Cadastro</h1>
+                    <p>Cadastre-se para receber as últimas promoções em tempo real</p>
                 </div>
             </div>
         </div>
+        <div>
+            <form class="form">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <label for="nome" class="col-form-label-sm">Nome</label>
+                    <input type="text" name="nome" id="nome" class="form-control" required>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <label for="email" class="col-form-label-sm">Email</label>
+                    <input name="email" id="email" class="form-control"  required>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <label for="tel" class="col-form-label-sm">Telefone</label>
+                    <input type="tel" name="tel" id="tel" class="form-control" required>
+                </div>
+            </div>
+            <center><button type="submit" class="btn btn-lg btn-success" onclick="validar()">Realizar Cadastro</button></center>
+        </form>
+        </div>
     </div>
-    
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -197,5 +137,6 @@
         <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
         <script src="./vendor/owl/js/owl.js"></script>
         <script src="./js/custom.js"></script>
+        <script src="./js/valida.js"></script>
 </body>
 </html>
