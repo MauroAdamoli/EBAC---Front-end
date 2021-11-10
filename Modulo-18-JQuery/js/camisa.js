@@ -41,5 +41,7 @@ $(document).ready(function(){
 })
 
 function comprar() {
-    alert("Compra efetuada!")
+    alert("Compra efetuada!");
+    alert("Continue em nosso site para ver mais opções!")
+    window.location.href = "index.html";
 }

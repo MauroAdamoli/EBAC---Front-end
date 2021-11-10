@@ -685,6 +685,15 @@ div p {
 	margin-top: 20px;
 }
 
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-basis: 20%;
+	margin: 10px 0px;
+	background-color: whitesmoke;
+}
+
 /* Responsive Style */
 @media (max-width: 991px) {
 
@@ -740,6 +749,14 @@ div p {
 		margin-top: 0px;
 	}
 
+	.card {
+		flex-basis: 100%;
+	}
+
+	img {
+		display: flexbox;
+	}
+
 }
 
 @media (max-width: 767px) {
@@ -759,5 +776,13 @@ div p {
 		justify-content: center;
 		flex-basis: 100%;
 		
+	}
+
+	.card {
+		flex-basis: 100%;
+	}
+
+	img {
+		display: flexbox;
 	}
 }

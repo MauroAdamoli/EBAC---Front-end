@@ -26,13 +26,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home
+                        <a class="nav-link" href="#top">Produtos
                             <span class="sr-only">(current)</span>
                         </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#featured">Produtos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="sobre.html">Sobre nós</a>
@@ -59,94 +59,30 @@
         </div>
     </div>
     
-    <div id="featured" class="featured-items">
+    <center><div id="featured" class="featured-items">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-heading">
-                        <div class="line-dec"></div>
-                        <h1>Camisas em destaque</h1>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-heading">
+                            <div class="line-dec"></div>
+                            <h1>Camisas em destaque</h1>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-12 col-sm-12">
-                    <div class="owl-carousel owl-theme">
-                        <div class="featured-item card">
-                            <img src="assets/images/camisa-1.png" alt="Item 1">
-                            <h4>Atlético-MG</h4>
-                            <h6>R$ 250,00</h6>
-                            <a href="camisa-1.html">
-                                Comprar
-                            </a>
-                        </div>
-                        <div class="featured-item card">
-                            <img src="assets/images/camisa-2.png" alt="Item 2">
-                            <h4>Palmeiras</h4>
-                            <h6>R$ 250,00</h6>
-                            <a href="camisa-2.html">
-                                Comprar
-                            </a>
-                        </div>
-                        <div class="featured-item card">
-                            <img src="assets/images/camisa-3.png" alt="Item 3">
-                            <h4>Flamengo</h4>
-                            <h6>R$ 250,00</h6>
-                            <a href="camisa-3.html">
-                                Comprar
-                            </a>
-                        </div>
-                        <div class="featured-item card">
-                            <img src="assets/images/camisa-4.png" alt="Item 4">
-                            <h4>Chelsea</h4>
-                            <h6>R$ 210,00</h6>
-                            <a href="camisa-4.html">
-                                Comprar
-                            </a>
-                        </div>
-                        <div class="featured-item card">
-                            <img src="assets/images/camisa-5.png" alt="Item 5">
-                            <h4>Bayern</h4>
-                            <h6>R$ 210,00</h6>
-                            <a href="camisa-5.html">
-                                Comprar
-                            </a>
-                        </div>
-                        <div class="featured-item card">
-                            <img src="assets/images/camisa-6.png" alt="Item 6">
-                            <h4>PSG</h4>
-                            <h6>R$ 210,00</h6>
-                            <a href="camisa-6.html">
-                                Comprar
-                            </a>
-                        </div>
-                        <div class="featured-item card">
-                            <img src="assets/images/camisa-7.png" alt="Item 7">
-                            <h4>Bélgica</h4>
-                            <h6>R$ 180,00</h6>
-                            <a href="camisa-7.html">
-                                Comprar
-                            </a>
-                        </div>
-                        <div class="featured-item card">
-                            <img src="assets/images/camisa-8.png" alt="Item 8">
-                            <h4>Brasil</h4>
-                            <h6>R$ 180,00</h6>
-                            <a href="camisa-8.html">
-                                Comprar
-                            </a>
-                        </div>
-                        <div class="featured-item card">
-                            <img src="assets/images/camisa-9.png" alt="Item 9">
-                            <h4>França</h4>
-                            <h6>R$ 180,00</h6>
-                            <a href="camisa-9.html">
-                                Comprar
-                            </a>
+                    <div class="col-md-12">
+                        <div class="owl-carousel owl-theme">
+                            <div class="featured-item card">
+                                <img src="assets/images/camisa-2.png" alt="Item 1">
+                                <h4>Palmeiras</h4>
+                                <h6>R$ 250,00</h6>
+                                <a onclick="comprar()">
+                                    Comprar
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
-    </div>
+    </div></center>
     
     <div class="footer">
         <div class="container">
@@ -196,6 +132,6 @@
         <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
         <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
         <script src="./vendor/owl/js/owl.js"></script>
-        <script src="./js/custom.js"></script>
+        <script src="./js/camisa.js"></script>
 </body>
 </html>
