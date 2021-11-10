@@ -25,7 +25,7 @@ function validaCampoNumerico(elemento){
 
         event.preventDefault();
 
-        let numero = this.value.match(/^[\d]2-[\d]5[\d]4/) ? this.value.replace(/-/, "()") : this.value; 
+        let numero = this.value.match(/^[\d]5-[\d]3/) ? this.value.replace(/-/, "") : this.value; 
 
         if(numero != "" && numero.match(/[0-9]*/) && numero >= 0 && numero <= 10){
             document.querySelector('.mensagem').innerHTML = "";
@@ -51,6 +51,29 @@ function validaEmail(elemento){
 
         const emailValido = /^[a-z0-9._]+@[a-z0-9_]+\.[a-z]+(\.[a-z]+)?/i;
         if(this.value.match(emailValido)) {
+            document.querySelector('.mensagem').innerHTML = "";
+            this.classList.remove('erro');
+            this.parentNode.classList.remove('erro');
+        } else {
+            document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em destaque";
+            this.classList.add('erro');
+            this.parentNode.classList.add('erro');
+            return false;
+        }
+
+    });
+
+}
+
+function validacaoCEP(elemento){
+
+    elemento.addEventListener('focusout', function(event) {
+
+        event.preventDefault();
+
+        let numero = this.value.match(/^[\d]5-[\d]3/) ? this.value.replace(/-/, "") : this.value; 
+
+        if(numero != "" && numero.match(/[0-9]*/) && numero >= 0 && numero <= 10){
             document.querySelector('.mensagem').innerHTML = "";
             this.classList.remove('erro');
             this.parentNode.classList.remove('erro');
@@ -123,6 +146,7 @@ else {
 let camposObrigatorios = document.querySelectorAll('input.obrigatorio');
 let camposNumericos = document.querySelectorAll('input.numero');
 let camposEmail = document.querySelectorAll('input.email');
+let camposCEP = document.querySelectorAll('input.CEP');
 
 for( let emFoco of camposObrigatorios) {
     validaCampo(emFoco);
@@ -134,6 +158,10 @@ for( let emFoco of camposNumericos) {
 
 for( let emFoco of camposEmail) {
     validaEmail(emFoco);
+}
+
+for( let emFoco of camposCEP) {
+    validacaoCEP(emFoco);
 }
 
 /* Função Validar */
