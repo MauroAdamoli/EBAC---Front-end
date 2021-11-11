@@ -1,0 +1,1 @@
+$('.featured-item:last h4').append('<span class="badge bg-secondary">Última peça</span>')

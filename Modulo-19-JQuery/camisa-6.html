@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./assets/images/Icon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./assets/images/icon-touch-retina.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./assets/images/icon-touch-retina-ipad.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./assets/images/icon-touch-retina-iphone.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/owl/css/owl.css">
+    <link rel="stylesheet" href="./vendor/fontawesome/fontawesome.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>World Soccer</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="assets/images/logo2.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#top">Produtos
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="caption">
+                        <h2>World Soccer: A casa do futebol</h2>
+                        <div class="line-dec"></div>
+                        <p>As melhores camisas de times nacionais e internacionais </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <center><div id="featured" class="featured-items">
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-heading">
+                            <div class="line-dec"></div>
+                            <h1>Camisas em destaque</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="owl-carousel owl-theme">
+                            <div class="featured-item card">
+                                <img src="assets/images/camisa-6.png" alt="Item 1">
+                                <h4>PSG</h4>
+                                <h6>R$ 210,00</h6>
+                                <a onclick="comprar()">
+                                    Comprar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div></center>
+    
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="logo">
+                        <img src="assets/images/logo3.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">How It Works ?</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="sub-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright-text">
+                        <p>World Soccer &copy; Todos os direitos reservados
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
+        <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="./vendor/owl/js/owl.js"></script>
+        <script src="./js/camisa.js"></script>
+</body>
+</html>
