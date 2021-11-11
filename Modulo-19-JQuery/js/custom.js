@@ -153,8 +153,6 @@ $(document).ready(function(){
       $(this).mask('000.000.000-00');
       $(this.value.match('^\d{3}\.\d{3}\.\d{3}\-\d{2}$'))
    })
-
-     
      
      
 
@@ -165,3 +163,4 @@ $(document).ready(function(){
 
 
 })
+
