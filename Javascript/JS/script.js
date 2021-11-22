@@ -19,30 +19,6 @@ function validaCampo(elemento){
 
 }
 
-function validaCampoNumerico(elemento){
-
-    elemento.addEventListener('focusout', function(event) {
-
-        event.preventDefault();
-
-        let numero = this.value.match(/^[\d]5-[\d]3/) ? this.value.replace(/-/, "") : this.value; 
-
-        if(numero != "" && numero.match(/[0-9]*/) && numero >= 0 && numero <= 10){
-            document.querySelector('.mensagem').innerHTML = "";
-            this.classList.remove('erro');
-            this.parentNode.classList.remove('erro');
-        } else {
-            document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em destaque";
-            this.classList.add('erro');
-            this.parentNode.classList.add('erro');
-            return false;
-        }
-
-    });
-
-}
-
-
 function validaEmail(elemento){
 
     elemento.addEventListener('focusout', function(event) {
@@ -65,15 +41,58 @@ function validaEmail(elemento){
 
 }
 
+function validaNome(elemento){
+
+    elemento.addEventListener('focusout', function(event) {
+
+        event.preventDefault();
+
+        const nomeValido = /^[a-zA-ZéúíóáÉÚÍÓÁèùìòàçÇÈÙÌÒÀõãñÕÃÑêûîôâÊÛÎÔÂëÿüïöäËYÜÏÖÄ\-\ \s]+$/;
+        if(this.value.match(nomeValido)) {
+            document.querySelector('.mensagem').innerHTML = "";
+            this.classList.remove('erro');
+            this.parentNode.classList.remove('erro');
+        } else {
+            document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em destaque";
+            this.classList.add('erro');
+            this.parentNode.classList.add('erro');
+            return false;
+        }
+
+    });
+
+}
+
 function validacaoCEP(elemento){
 
     elemento.addEventListener('focusout', function(event) {
 
         event.preventDefault();
 
-        let numero = this.value.match(/^[\d]5-[\d]3/) ? this.value.replace(/-/, "") : this.value; 
+        const CEPValido = /^\d{5}-?\d{3}$/;
+        if(this.value.match(CEPValido)) {
+            document.querySelector('.mensagem').innerHTML = "";
+            this.classList.remove('erro');
+            this.parentNode.classList.remove('erro');
+        } else {
+            document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em destaque";
+            this.classList.add('erro');
+            this.parentNode.classList.add('erro');
+            return false;
+        }
 
-        if(numero != "" && numero.match(/[0-9]*/) && numero >= 0 && numero <= 10){
+    });
+
+}
+
+function validacaoCel(elemento){
+
+    elemento.addEventListener('focusout', function(event) {
+
+        event.preventDefault();
+
+        const CelValido = /^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$/;
+        if(this.value.match(CelValido)) {
             document.querySelector('.mensagem').innerHTML = "";
             this.classList.remove('erro');
             this.parentNode.classList.remove('erro');
@@ -144,16 +163,17 @@ else {
 };
 
 let camposObrigatorios = document.querySelectorAll('input.obrigatorio');
-let camposNumericos = document.querySelectorAll('input.numero');
+let camposNome = document.querySelectorAll('input.nome');
 let camposEmail = document.querySelectorAll('input.email');
 let camposCEP = document.querySelectorAll('input.CEP');
+let camposCel = document.querySelectorAll('input.cel');
 
 for( let emFoco of camposObrigatorios) {
     validaCampo(emFoco);
 }
 
-for( let emFoco of camposNumericos) {
-    validaCampoNumerico(emFoco);
+for ( let emFoco of camposNome) {
+    validaNome(emFoco);
 }
 
 for( let emFoco of camposEmail) {
@@ -164,7 +184,12 @@ for( let emFoco of camposCEP) {
     validacaoCEP(emFoco);
 }
 
-/* Função Validar */
+for (let emFoco of camposCel) {
+    validacaoCel(emFoco);
+}
+
+
+/* Função Validar */ 
 function validar() {
     // pegando o valor do nome pelos names
     var nome = document.getElementById("nome");
