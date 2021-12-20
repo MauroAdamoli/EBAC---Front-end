@@ -121,6 +121,7 @@ $(document).ready(function(){
 
    $('body').on('blur', '#email', function(){
       validate($(this))
+      $(this.value.match('^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,6})+$'))
    })
 
 
@@ -136,16 +137,19 @@ $(document).ready(function(){
    $('body').on('blur', '#time', function(){
       validate($(this))
       $(this).mask('00:00');
+      $(this.value.match('^\d{2}\:\d{2}$'))
    })
 
    $('body').on('blur', '#cep', function(){
       validate($(this))
       $(this).mask('00000-000');
+      $(this.value.match('^\d{5}\-\d{3}$'))
    })
 
    $('body').on('blur', '#phone', function(){
       validate($(this))
-      $(this).mask('00000-0000');
+      $(this).mask('(00) 00000-0000');
+      $(this.value.match('^\d{2}\\d{5}\-\d{4}$'))
    })
 
    $('body').on('blur', '#cpf', function(){
