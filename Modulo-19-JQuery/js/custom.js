@@ -117,6 +117,7 @@ $(document).ready(function(){
 
    $('body').on('blur', '#nome', function(){
       validate($(this))
+      $(this.value.match('^[a-zA-ZéúíóáÉÚÍÓÁèùìòàçÇÈÙÌÒÀõãñÕÃÑêûîôâÊÛÎÔÂëÿüïöäËYÜÏÖÄ\-\ \s]+$'))
    })
 
    $('body').on('blur', '#email', function(){
