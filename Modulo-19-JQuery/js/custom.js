@@ -117,12 +117,14 @@ $(document).ready(function(){
 
    $('body').on('blur', '#nome', function(){
       validate($(this))
-      $(this.value.match('^[a-zA-ZéúíóáÉÚÍÓÁèùìòàçÇÈÙÌÒÀõãñÕÃÑêûîôâÊÛÎÔÂëÿüïöäËYÜÏÖÄ\-\ \s]+$'))
+      $(this).mask('^[a-zA-ZéúíóáÉÚÍÓÁèùìòàçÇÈÙÌÒÀõãñÕÃÑêûîôâÊÛÎÔÂëÿüïöäËYÜÏÖÄ\-\ \s]+$')
+     // $(this.value.match('^[a-zA-ZéúíóáÉÚÍÓÁèùìòàçÇÈÙÌÒÀõãñÕÃÑêûîôâÊÛÎÔÂëÿüïöäËYÜÏÖÄ\-\ \s]+$'))
    })
 
    $('body').on('blur', '#email', function(){
       validate($(this))
-      $(this.value.match('^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,6})+$'))
+      $(this.value.match('/^([a-zA-Z])+([a-zA-Z0-9_.+-])+\@(([a-zA-Z])+\.+?(com|co|in|org|net|edu|info|gov|vekomy))\.?(com|co|in|org|net|edu|info|gov)?$/'))
+     // $(this.value.match('^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,6})+$'))
    })
 
 
@@ -150,13 +152,14 @@ $(document).ready(function(){
    $('body').on('blur', '#phone', function(){
       validate($(this))
       $(this).mask('(00) 00000-0000');
-      $(this.value.match('^\d{2}\\d{5}\-\d{4}$'))
+     // $(this.value.match('^\d{2}\\d{5}\-\d{4}$'))
    })
 
    $('body').on('blur', '#cpf', function(){
       validate($(this))
       $(this).mask('000.000.000-00');
       $(this.value.match('^\d{3}\.\d{3}\.\d{3}\-\d{2}$'))
+      
    })
      
      

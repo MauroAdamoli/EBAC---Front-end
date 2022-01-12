@@ -300,7 +300,7 @@
                     </small>
                 </div>
 
-                  <button onclick="validate()" type="submit" class="btn btn-success" >Enviar</button>
+                  <button type="submit" class="btn btn-success" >Enviar</button>
 
             </form>
         </div>
@@ -322,5 +322,12 @@
         <script src="./vendor/jquery-mask/jquery.mask.min.js"></script>
         <script src="./vendor/jquery-ui-1.13.0.custom/jquery-ui.min.js"></script>
         <script src="./js/custom.js"></script>
+        <script src="./js/valida.js"></script>
+
+        <script>
+            $(function(e){
+                $("#contato").validate()
+            })
+        </script>
     </body>
     </html>
