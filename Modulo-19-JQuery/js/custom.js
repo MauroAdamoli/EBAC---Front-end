@@ -117,8 +117,7 @@ $(document).ready(function(){
 
    $('body').on('blur', '#nome', function(){
       validate($(this))
-      $(this).mask('^[a-zA-ZéúíóáÉÚÍÓÁèùìòàçÇÈÙÌÒÀõãñÕÃÑêûîôâÊÛÎÔÂëÿüïöäËYÜÏÖÄ\-\ \s]+$')
-     // $(this.value.match('^[a-zA-ZéúíóáÉÚÍÓÁèùìòàçÇÈÙÌÒÀõãñÕÃÑêûîôâÊÛÎÔÂëÿüïöäËYÜÏÖÄ\-\ \s]+$'))
+      $(this.value.match('^[a-zA-ZéúíóáÉÚÍÓÁèùìòàçÇÈÙÌÒÀõãñÕÃÑêûîôâÊÛÎÔÂëÿüïöäËYÜÏÖÄ\-\ \s]+$'))
    })
 
    $('body').on('blur', '#email', function(){
@@ -137,34 +136,33 @@ $(document).ready(function(){
       $(this).mask('00/00/0000');
    }) 
 
-   $('body').on('blur', '#time', function(){
-      validate($(this))
-      $(this).mask('00:00');
-      $(this.value.match('^\d{2}\:\d{2}$'))
-   })
-
    $('body').on('blur', '#cep', function(){
       validate($(this))
       $(this).mask('00000-000');
-      $(this.value.match('^\d{5}\-\d{3}$'))
+      $(this.value.match('^[0-9]{2}.?[0-9]{3}-?[0-9]{3}$'))
    })
 
    $('body').on('blur', '#phone', function(){
       validate($(this))
-      $(this).mask('(00) 00000-0000');
-     // $(this.value.match('^\d{2}\\d{5}\-\d{4}$'))
+      $(this).mask('00-00000-0000');
+      $(this.value.match('^[0-9]{2}-?[0-9]{5}-?[0-9]{4}$'))
    })
 
    $('body').on('blur', '#cpf', function(){
       validate($(this))
       $(this).mask('000.000.000-00');
-      $(this.value.match('^\d{3}\.\d{3}\.\d{3}\-\d{2}$'))
+      $(this.value.match('^[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}$'))
       
    })
-     
-     
 
+   $('body').on('submit', '.modal-body .form', function(e){
 
+         alert("Cadastro realizado com sucesso");
+         window.location.href = "index.html";
+       
+
+   })
+     
 
 
 
