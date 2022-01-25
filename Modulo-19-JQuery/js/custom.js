@@ -32,11 +32,7 @@ $(document).ready(function(){
 
    // Callback
    $('.featured-item:nth(1)').
-      hide(1000, function(){
-      // este é o callback
-      alert($(this).find('h4').text() + ' esgotado')
-   })
-   .show(10000, function(){
+      show(10000, function(){
       alert($(this).find('h4').text() + ' em estoque')
    })
 

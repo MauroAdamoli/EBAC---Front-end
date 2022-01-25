@@ -275,6 +275,10 @@ div p {
 	border: none;
 }
 
+.receba input{
+	margin: 20px 0px;
+}
+
 
 /* Footer Style */
 .footer {
